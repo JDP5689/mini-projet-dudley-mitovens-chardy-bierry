@@ -1,13 +1,21 @@
 public class Joueur {
-    // ========== ATTRIBUTS ==========
+    //                ATTRIBUTS
     // Caractéristiques du joueur
     private String nom;
     private Personnage[] equipe;
 
-    // ========== CONSTRUCTEUR ==========
+    //                 CONSTRUCTEUR
     // Crée un nouveau joueur avec son nom
     public Joueur(String nom) {
         this.nom = nom;
         this.equipe = new Personnage[3];
     }
-}
+    //                  MÉTHODE 1
+    public Personnage choisirPersonnageVivant() {
+        for (Personnage p : equipe) {
+            if (p != null && p.estVivant()) {
+                return p;
+            }
+        }
+        return null;  // Aucun personnage vivant
+    }
