@@ -10,3 +10,4 @@ public class Joueur {
         this.nom = nom;
         this.equipe = new Personnage[3];
     }
+}
