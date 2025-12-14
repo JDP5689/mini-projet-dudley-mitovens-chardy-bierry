@@ -19,3 +19,13 @@ public class Joueur {
         }
         return null;  // Aucun personnage vivant
     }
+    //                   METHODE 2
+    public boolean aEncoreDesPersonnagesVivants() {
+        // Cherche au moins un personnage vivant
+        for (Personnage p : equipe) {
+            if (p != null && p.estVivant()) {
+                return true;
+            }
+        }
+        return false;
+    }
