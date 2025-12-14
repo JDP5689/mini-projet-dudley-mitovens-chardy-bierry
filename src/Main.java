@@ -9,6 +9,7 @@ public class Main {
 Scanner scanner = new Scanner(System.in);
 System.out.println("Bienvenue dans le jeu de combat !");
 // Pa bliye input se pou ajoute yon vale ki dwe asigne ak yon objet de yon klas
+
 System.out.print("Joueur 1, entre ton nom : ");
 // pou ke non jwe an stoke, nou dwe kreye yon new personnage de klas personnage lan ki ap gen non jouer1;
 // String nom = input.nextLine(); liy sa se li menm ki ap setup le nou kreye klas yo;
@@ -24,34 +25,7 @@ String joueur2 = scanner.nextLine();// liy sa ap retire le klas yo kreye;
   scanner.close();  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       // Création d'un personnage avec le constructeur complet
+ // Création d'un personnage avec le constructeur complet
                 Personnage guerrier = new Personnage("Chardy", 100, 25);
 
                 // Création d'un personnage avec le constructeur alternatif (attaque par défaut = 0)

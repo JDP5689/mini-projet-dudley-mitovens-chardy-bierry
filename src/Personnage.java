@@ -42,4 +42,23 @@ public class Personnage {
     public void setNom(String nom) {
         this.nom = nom;
     }
+
+    //verification si le personnage est toujours vivant !!
+    public boolean estVivant () {
+        return vie >0;
+    }
+
+    public void attaquer (Personnage cible) {
+        if (this.estVivant()) {
+
+            // la vie ne peut etre egale a zero
+            cible.vie = cible.vie - this.attaque;
+            System.out.println (cible.nom + "perd" + this.attaque + "points de vie !")
+        } else {
+            System.out.println (this.nom + "est mort et ne peut pas attaquer !");
+        }
+
+    }
+
+
 }
