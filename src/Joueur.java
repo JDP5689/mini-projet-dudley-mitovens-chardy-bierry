@@ -50,4 +50,12 @@ public class Joueur {
             equipe[index] = p;
         }
     }
+    // Récupère un personnage à une position spécifique
+    public Personnage getPersonnage(int index) {
+        if (index >= 0 && index < 3) {
+            return equipe[index];
+        }
+        return null;
+    }
+}
 
