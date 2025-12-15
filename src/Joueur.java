@@ -39,3 +39,15 @@ public class Joueur {
             }
         }
     }
+    // ========== GETTER/SETTER ==========
+    public String getNom() {
+        return nom;
+    }
+
+    // Place un personnage à une position spécifique (0, 1 ou 2)
+    public void setPersonnage(Personnage p, int index) {
+        if (index >= 0 && index < 3) {
+            equipe[index] = p;
+        }
+    }
+
