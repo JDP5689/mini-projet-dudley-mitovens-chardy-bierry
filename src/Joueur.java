@@ -38,4 +38,4 @@ public class Joueur {
                 p.afficherEtat();
             }
         }
-    }
+    
